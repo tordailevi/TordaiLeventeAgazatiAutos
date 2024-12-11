@@ -20,3 +20,14 @@ def egyjegyuek_szama(randomszamok_lista):
         if randomszamok_lista[i] < 10:
             e += 1
     return e
+
+def konzol_kiir(e):
+    print("II/D, E:")
+    print(f"Az egyjegyűek száma: {e}.")
+
+def file_kiir(e):
+    szam:str = str(e)
+    fajlom = open("szamok.txt", "w", encoding="UTF-8")
+    fajlom.write(szam)
+    fajlom.close()
+
